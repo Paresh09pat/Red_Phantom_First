@@ -51,3 +51,5 @@ const hideMobileMenu = () => {
             menuLinks.classList.remove('active')
       }
 }
+
+  AOS.init();
