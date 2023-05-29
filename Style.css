@@ -214,11 +214,6 @@
    align-items: center;
 }
 
-.video_play{
-    color: white;
-    font-size: 50px;
-}
-
 .video_btn{
     width: 70px;
 }
@@ -444,8 +439,13 @@
 }
 
 .anything:hover {
-    background-color: #3aa6ca;
+    background-color: black; 
     text-decoration: none;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #fa3307;
+    color:white;
+    /* box-shadow: 0 0 5px #ffee10; */
+    text-shadow: 0 0 5px #ffee10;
 }
 
 .icon_div {
@@ -465,8 +465,11 @@
 }
 
 .footer--links:hover {
-    color: #bf3030 !important;
+    /* color: rgb(55, 173, 173) !important; */
     text-decoration: none;
+    background: linear-gradient(to right, #07abf1 50%,#07ec90 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -530,7 +533,6 @@
         padding: 2rem;
         width: 100%;
         display: table;
-
     }
 
     .navbar__btn {
@@ -584,7 +586,7 @@
         width: 100%;
         box-sizing: border-box;
         background-position: bottom;
-        background-size: 500px 280px;
+        background-size: 100% auto;
         background-repeat: no-repeat;
     }
 
@@ -955,9 +957,12 @@
     #maindiv_first {
         height: auto;
         width: 100%;
-        background-color: rgb(249, 239, 227);
+        background-color: white;
         /* border: 1px solid red; */
         box-sizing: border-box;
+        background-position: bottom;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
     }
 
     .colortext_div {
