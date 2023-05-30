@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -24,8 +25,7 @@
 
     <nav class="navbar" id="navbar">
         <div class="navbar_container">
-            <a href="#home" id="navbar__logo"><img src="./Images/tech_logo.png" alt="logo"
-                    class="nav--logo"></a>
+            <a href="#home" id="navbar__logo"><img src="./Images/tech_logo.png" alt="logo" class="nav--logo"></a>
 
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -51,7 +51,15 @@
                 </li>
 
                 <li class="navbar__btn">
-                    <a href="#sign-up" id="signup">Search</a>
+                    <a href="#sign-up" id="signup">
+                        <div class="input-box">
+                            <input type="text" placeholder="Search..." />
+                            <span class="search">
+                                <i class="uil uil-search search-icon"></i>
+                            </span>
+                            <i class="uil uil-times close-icon"></i>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -60,12 +68,14 @@
 
     <!-- first section -->
 
-    <div id="maindiv_first" >
+    <div id="maindiv_first">
         <div class="AI_DIV">
             AI
         </div>
 
-        <div class="colortext_div">
+        <div class="colortext_div" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <p class="colortext"><span class="inc">E</span>XPERIENCE <span class="inc">T</span>HE <span
                     class="inc">P</span>OWER <br /> <span class="inc">O</span>F <span class="inc">I</span>NFORMATION
                 <span class="inc">T</span>HROUGH
@@ -85,16 +95,22 @@
 
     <!-- second section -->
 
-    <div id="maindiv_second" >
+    <div id="maindiv_second">
         <div class="H_DIV">
             H
         </div>
 
-        <div class="sec_subdiv1" >
+        <div class="sec_subdiv1">
             <div class="video_div" data-aos="flip-left">
-                <a href="#video">
-                    <img class="video_btn" src="./Images/button.png"/>
-                </a>
+
+                <img class="video_btn" src="./Images/button.png" />
+
+                <div class="on_video">
+                    <video src="https://media.geeksforgeeks.org/wp-content/uploads/20210810214359/2.mp4"
+                        type="video/mp4" muted class="vid" loop>
+                    </video>
+                </div>
+
             </div>
 
             <div class="sec_subdiv1_text">
@@ -103,23 +119,23 @@
         </div>
 
         <div class="sec_subdiv2" class="container" >
-            <p class="text_ML">MACHINE LEARNING</p>
+            <p class="text_ML" data-aos="zoom-in-down">MACHINE LEARNING</p>
 
-            <p class="text_EIYO">
+            <p class="text_EIYO" data-aos="zoom-in-down">
                 <span class="size_inc">E</span>VERYONE <span class="size_inc">I</span>N <span
                     class="size_inc">Y</span>OUR <span class="size_inc">O</span>RGANIZATION <br /> <span
                     class="size_inc">C</span>AN <span class="size_inc">M</span>AKE <span class="size_inc">A</span>N
                 <span class="size_inc">I</span>MPACT <span class="size_inc">W</span>ITH <span class="size_inc">A</span>I
             </p>
 
-            <p class="text_MLTO">
+            <p class="text_MLTO" data-aos="zoom-in-up">
                 <span class="text_MLTO_INC">M</span>ACHINE <span class="text_MLTO_INC">L</span>EARNING <span
                     class="text_MLTO_INC">T</span>O <span class="text_MLTO_INC">U</span>NDERSTAND <br /> <span
                     class="text_MLTO_INC">B</span>EHAVIORAL <span class="text_MLTO_INC">P</span>ATTERNS <span
                     class="text_MLTO_INC">O</span>F <span class="text_MLTO_INC">D</span>ATA
             </p>
 
-            <p style="text-align: justify; " class="my_text">
+            <p style="text-align: justify; " class="my_text"  data-aos="zoom-in-up">
                 Machine learning includes complex connectivity of data structures model training . model integration and
                 architecture. We focus on accuracyof the features of end product to meet end users requirements by using
                 different machine learning algorithms.
@@ -131,15 +147,15 @@
 
     <div id="maindiv_third">
 
-        <div class="div_I">
+        <!-- <div class="div_I">
             I
-        </div>
+        </div> -->
 
-        <p class="TS_ML_text">
+        <p class="TS_ML_text"  data-aos="zoom-out">
             MACHINE LEARNING
         </p>
 
-        <p class="ts_stext">
+        <p class="ts_stext"  data-aos="zoom-out">
             <span class="ts_text_size">M</span>ACHINE <span class="ts_text_size">L</span>EARNING <span
                 class="ts_text_size">T</span>O <span class="ts_text_size">U</span>NDERSTAND <br /> <span
                 class="ts_text_size">B</span>EHAVIORAL <span class="ts_text_size">P</span>ATTERNS <span
@@ -148,33 +164,33 @@
 
         <div class="third_subdiv">
             <div class="card_div">
-                <p class="card_head">
+                <p class="card_head" data-aos="zoom-in-down">
                     <span class="card_text_inc">N</span>ATURAL <span class="card_text_inc">L</span>ANGUAGE <br /> <span
                         class="card_text_inc">P</span>ROCESSING
                 </p>
-                <p class="card_sim_text">
+                <p class="card_sim_text" data-aos="zoom-in-up">
                     To understanding the natural language especially with proprietary and small data sets , we use
                     different machine learning techniques along with additional NLP Palgorithms.
                 </p>
             </div>
 
-            <div class="card_div">
-                <p class="card_head">
+            <div class="card_div" >
+                <p class="card_head" data-aos="zoom-in-down" >
                     <span class="card_text_inc">V</span>ISION <span class="card_text_inc">A</span>NALYTICS & <br />
                     <span class="card_text_inc">I</span>MAGE <span class="card_text_inc">P</span>ROCESSING
                 </p>
-                <p class="card_sim_text">
+                <p class="card_sim_text" data-aos="zoom-in-up">
                     Deep learning techniques includes innovative ways to deal with the process of domainspecific data
                     set and solve to generic computational problems to get the practical solution.
                 </p>
             </div>
 
             <div class="card_div">
-                <p class="card_head">
+                <p class="card_head" data-aos="zoom-in-down">
                     <span class="card_text_inc">B</span>RAINSTORMING & <span class="card_text_inc">S</span>TACK <br />
                     <span class="card_text_inc">O</span>F <span class="card_text_inc">T</span>ECHNOLOGY
                 </p>
-                <p class="card_sim_text">
+                <p class="card_sim_text" data-aos="zoom-in-up">
                     To convert ideas into product, different technologies and skills like Machine Learning, Paython,
                     Data Science, Java Script are stacked together to achieve fully functional product.
                 </p>
@@ -191,11 +207,11 @@
     <div id="maindiv_fourth">
         <div class="fourth_sam_div">
             <div class="fourth_sub_div1">
-                <p class="fsd_text1">
+                <p class="fsd_text1" data-aos="fade-down">
                     PREDICTING FUTURE IS MAGIC OF AI
                 </p>
 
-                <p class="fsd_text2">
+                <p class="fsd_text2" data-aos="fade-up">
                     <span class="FS_TC">A</span>DD <span class="FS_TC">AI</span> <span class="FS_TC">T</span>O <span
                         class="FS_TC">Y</span>OUR <span class="FS_TC">E</span>XISTING <br /> <span
                         class="FS_TC">B</span>USINESS <span class="FS_TC">A</span>CTIVITIES <span
@@ -203,7 +219,7 @@
                         class="FS_TC">Y</span>OURSELF .
                 </p>
 
-                <p class="fsd_text3">
+                <p class="fsd_text3" data-aos="fade-up">
                     To understanding the natural language especially with proprietary and small data sets, we use
                     different machine learning techniques along with traditional NPL Palgorithms.
                 </p>
@@ -223,17 +239,17 @@
                     <h5 class="text-uppercase footer--head">Company</h5>
 
                     <ul class="list-unstyled mb-0 ">
-                        <li >
-                            <a class="footer--links" href="#!" class="text-white text-start  ">About Us</a>
+                        <li>
+                            <a class="footer--links" href="#" class="text-white  ">About Us</a>
                         </li>
                         <li>
-                            <a class="footer--links" href="#!" class="text-white">Services</a>
+                            <a class="footer--links" href="#" class="text-white">Services</a>
                         </li>
                         <li>
-                            <a class="footer--links" href="#!" class="text-white">Career</a>
+                            <a class="footer--links" href="#" class="text-white">Career</a>
                         </li>
                         <li>
-                            <a class="footer--links" href="#!" class="text-white">Latest News</a>
+                            <a class="footer--links" href="#" class="text-white">Latest News</a>
                         </li>
                     </ul>
                 </div>
@@ -253,7 +269,7 @@
                         </li>
                         <li>
                             <a href="#!" class="text-white footer--links">Contact Us</a>
-                        </li> 
+                        </li>
                     </ul>
                 </div>
 
@@ -261,21 +277,22 @@
                     <h5 class="text-uppercase footer--head">Address</h5>
 
                     <ul class="list-unstyled mb-0">
-                      <li>
-                        <a href="https://maps.app.goo.gl/a28bqjkmvLa7Bb448" target="_blank" class="text-white footer--links">
-                           A Wing, 7th floor, City vista, kharadi, Pune
-                        </a>
-                      </li>
-                      <li>
-                        <a href="mailto:contact@rptechnovelty.com" target="_blank" class="text-white footer--links">
-                            Email : contact@rptechnovelty.com
-                        </a>
-                      </li>
-                      <li>
-                        <a href="tel:+91 9172912622" target="_blank" class="text-white footer--links">
-                            Phone : +91 9172912622
-                        </a>
-                      </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/a28bqjkmvLa7Bb448" target="_blank"
+                                class="text-white footer--links">
+                                A Wing, 7th floor, City vista, kharadi, Pune
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@rptechnovelty.com" target="_blank" class="text-white footer--links">
+                                Email : contact@rptechnovelty.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+91 9172912622" target="_blank" class="text-white footer--links">
+                                Phone : +91 9172912622
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -284,7 +301,8 @@
                     <p class="ml-5 mt-3 follow">Follow us on</p>
 
                     <div class="icon_div">
-                        <a href="https://www.facebook.com/redphantomgroup/?ref=pages_you_manage" target="_blank" class="footer--logo">
+                        <a href="https://www.facebook.com/redphantomgroup/?ref=pages_you_manage" target="_blank"
+                            class="footer--logo">
                             <li class="anything"> <i class="fa fa-facebook"></i></li>
                         </a>
                         <a href="https://www.instagram.com/redphantomgroup/" target="_blank" class="footer--logo">
@@ -293,7 +311,8 @@
                         <a href="https://wa.me/+919172912622" target="_blank" class="footer--logo">
                             <li class="anything"> <i class="fa fa-whatsapp"></i></li>
                         </a>
-                        <a href="https://www.youtube.com/channel/UC3CbP6ZDRtyvweBc3966lxw" target="_blank" class="footer--logo">
+                        <a href="https://www.youtube.com/channel/UC3CbP6ZDRtyvweBc3966lxw" target="_blank"
+                            class="footer--logo">
                             <li class="anything"> <i class="fa fa-youtube"></i></li>
                         </a>
                         <a href="https://twitter.com/redphantomgroup" target="_blank" class="footer--logo">
@@ -316,7 +335,7 @@
 
 
     <script src="index.js"></script>
-    
+
 </body>
 
 </html>
