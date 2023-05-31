@@ -313,13 +313,10 @@
     z-index: 1;
 }
 
-/* .on_video{
-border: 1px solid red;
-} */
-
 .on_video:hover {
     z-index: 101;
     position: relative;
+    cursor: pointer;
 }
 
 
