@@ -9,6 +9,7 @@
     src: url(./fonts/Raleway-Medium.ttf);
 }
 
+
 *{
     position: relative;
     z-index: 99;
@@ -30,15 +31,20 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
     top: 0;
     z-index: 999;
-    font-family: Minimo;
 }
 
-#navbar {
+.navbar.hidden {
+    top: -100px; /* Or any value that moves the navbar off the screen */
+  }
+  
+/* #navbar {
     position: sticky;
-}
+} */
 
 .nav--logo {
     width: 80px;
@@ -688,6 +694,83 @@
         display: none;
     }
 
+    .input-box {
+        position: relative;
+        width: 50%;
+        max-width: 50px;
+        background-color: black;
+        height: 35px;
+        /* margin: 0 0px; */
+        border-radius: 6px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .input-box.open {
+        max-width: 300px;
+    }
+    
+    .input-box input {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        color: red;
+        padding: 0 0px;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .input-box.open input {
+        padding: 0 15px 0 65px;
+    }
+    
+    .input-box .search {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    
+    .input-box.open .search {
+        border-radius: 6px 0 0 6px;
+    }
+    
+    .search .search-icon {
+        font-size: 25px;
+        color: white;
+    }
+    
+    .input-box .close-icon {
+        position: absolute;
+        top: 50%;
+        right: -45px;
+        font-size: 30px;
+        color: white;
+        padding: 5px;
+        transform: translateY(-50%);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        pointer-events: none;
+        opacity: 0;
+    }
+    
+    .input-box.open .close-icon {
+        transform: translateY(-50%) rotate(180deg);
+        pointer-events: auto;
+        opacity: 1;
+    }
+    
     /* first section */
 
     #maindiv_first {

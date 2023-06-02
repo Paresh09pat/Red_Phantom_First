@@ -74,7 +74,6 @@ closeIcon.addEventListener('click', () => {
 });
 
 
-
  // Targeting video element 
  let clip = document.querySelector(".vid")
  clip.addEventListener("mouseover", function (e) {
@@ -85,9 +84,14 @@ closeIcon.addEventListener('click', () => {
  })
 
 
- 
-
-   $(window).load(function() {
-   $(".preloader").delay(5000).fadeOut("slow");
-   $("#overlayer").delay(5000).fadeOut("slow");
-   })
+// hide nav bar
+var prevScrollPos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.getElementById("navbar").classList.remove("hidden");
+  } else {
+    document.getElementById("navbar").classList.add("hidden");
+  }
+  prevScrollPos = currentScrollPos;
+};
